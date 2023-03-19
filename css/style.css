@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --primary-color: #ff5400;
+    --neutral-color: #564d4d;
+    --neutral-light-color: #6c6666;
+    --dark-color: #000;
+    --font-item-title: 'Bebas Neue', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--dark-color);
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+}
+
+/* Utilities */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo {
+    width: 150px;
+}
+
+.container {
+    margin: auto;
+    overflow: hidden;
+    max-width: 78%;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn:hover,
+.showcase-content input[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    font-size: 0.9rem;
+    padding: 0.5rem 0.9rem;
+    font-weight: 600;
+}
+
+.btn-secondary {
+    background: var(--primary-color);
+    padding: 0.2rem 1.3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.icon-section {
+    color: var(--neutral-light-color);
+}
+
+/* Header bh dark */
+.header-container::after {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: inset 0px 150px 120px #000;
+
+}
+
+/* Header Plans */
+#showcase {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('../img/showcase.jpg') no-repeat center center/cover;
+
+}
+
+#showcase .plans {
+    background: #fff;
+    position: relative;
+    color: var(--dark-color);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 1.3rem 0;
+    z-index: 2;
+}
+
+#showcase .plans span {
+    background: var(--primary-color);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 40px;
+}
+
+#showcase .plans p {
+    margin: 0 1.2rem;
+    font-size: 1rem;
+    letter-spacing: .02rem;
+}
+
+#showcase .plans p strong {
+    font-size: 1.2rem;
+}
+
+#showcase .plans a {
+    color: #9e0059;
+    font-weight: 600;
+}
+
+#showcase .plans a:hover {
+    cursor: pointer;
+}
+
+/* Showcase top */
+.showcase-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-top: 2.5rem;
+}
+
+.header-container .showcase-top,
+.header-container .showcase-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Showcase Content  */
+.showcase-content {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10rem;
+    width: 80%;
+    line-height: 1.6;
+}
+
+.showcase-content h1 {
+    font-size: 2.7rem;
+    font-weight: 800;
+}
+
+.showcase-content .title-content {
+    font-size: 1.5rem;
+}
+
+.showcase-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Subscibe block */
+.showcase-content label {
+    display: block;
+}
+
+.showcase-content input {
+    width: 40%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: transparent;
+    color: #fff;
+}
+
+.showcase-content input[type="submit"] {
+    width: 20%;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+.showcase-content input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* About TV Section*/
+#about {
+    border-bottom: var(--neutral-color) 2px solid;
+}
+
+#about .column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 5rem 1rem;
+}
+
+#about .column-1 {
+    width: 70%;
+}
+
+#about .column-1 h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about .about-section-tablet .column {
+    flex-direction: row-reverse;
+}
+
+#main-footer {
+    padding: 2rem;
+    display: flex;
+}
